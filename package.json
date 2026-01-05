@@ -1,0 +1,33 @@
+{
+  "name": "kinso-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed": "node scripts/seed.js",
+    "add:user": "node scripts/add-user.js",
+    "add:email": "node scripts/add-message.js --source email",
+    "add:slack": "node scripts/add-message.js --source slack",
+    "add:whatsapp": "node scripts/add-message.js --source whatsapp",
+    "add:linkedin": "node scripts/add-message.js --source linkedin"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "typescript": "^5"
+  }
+}
